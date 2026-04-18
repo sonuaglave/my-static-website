@@ -3,19 +3,17 @@ version: 0.2
 phases:
   install:
     commands:
-      - echo Installing build environment...
+      - echo Installing dependencies...
 
   build:
     commands:
-      - echo Build started on `date`
-      - echo No compilation needed for static website
+      - echo Building static website...
+      - echo Nothing to compile
 
   post_build:
     commands:
-      - echo Build completed on `date`
+      - echo Build completed successfully
 
 artifacts:
   files:
-    - index.html
-    - style.css
-    - script.js
+    - '**/*'
